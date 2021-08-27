@@ -1,1 +1,5 @@
-
+- replace:
+        path: "{{ T2P_HOME }}/moveplan/moveplan_test.xml"
+        regexp: '<configGroup>((?!<\/configGroup>)[\s\S])*?ManagedServer*[\s\S]*?<\/configGroup>'
+        remote_src: yes
+        replace: "{{ lookup('template','../config/Comment_ManagedServer.xml') }}"
