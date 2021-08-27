@@ -1,0 +1,774 @@
+--><movePlan>
+    <movableComponent>
+        <componentType>J2EEDomain</componentType>
+        <componentName>oam_domain</componentName>
+        <version>11.1.1.9.0</version>
+        <id>CLONE20210825181014337</id>
+        <moveDescriptor>
+            <configProperty>
+                <name>Startup Mode</name>
+                <value>PRODUCTION</value>
+                <itemMetadata>
+                    <dataType>STRING</dataType>
+                    <scope>READ_WRITE</scope>
+                </itemMetadata>
+            </configProperty>
+            <configGroup>
+                <type>SERVER_CONFIG</type>
+                <configProperty id="Server1">
+                    <configProperty>
+                        <name>Server Name</name>
+                        <value>AdminServer</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Listen Address</name>
+                        <value>All Local Addresses</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Listen Port</name>
+                        <value>7001</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>SSL Listen Port</name>
+                        <value>7002</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <!--
+                    <configProperty>
+                        <name>Custom Identity Keystore File</name>
+                        <value>/apps/oracle/middleware/oam_keystore/uat-oam_keystore.jks</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Keystore Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Trust Keystore File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Trust Keystore Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Private Key Alias</name>
+                        <value>server_cert</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Private Key Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                -->
+                </configProperty>
+                <configProperty id="Server2">
+                    <configProperty>
+                        <name>Server Name</name>
+                        <value>oam_server1</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Listen Address</name>
+                        <value>All Local Addresses</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Listen Port</name>
+                        <value>14100</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>SSL Listen Port</name>
+                        <value>14101</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <!--
+                    <configProperty>
+                        <name>Custom Identity Keystore File</name>
+                        <value>/apps/oracle/middleware/oam_keystore/uat-oam_keystore.jks</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Keystore Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Trust Keystore File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Trust Keystore Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Private Key Alias</name>
+                        <value>server_cert</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Private Key Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                -->
+                </configProperty>
+                <configProperty id="Server3">
+                    <configProperty>
+                        <name>Server Name</name>
+                        <value>omsm_server1</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Listen Address</name>
+                        <value>All Local Addresses</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Listen Port</name>
+                        <value>14180</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>SSL Listen Port</name>
+                        <value>14181</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <!--
+                    <configProperty>
+                        <name>Custom Identity Keystore File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Keystore Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Trust Keystore File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Trust Keystore Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Private Key Alias</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Custom Identity Private Key Passphrase File</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                -->
+                </configProperty>
+                <configProperty id="Server4">
+                    <configProperty>
+                        <name>Server Name</name>
+                        <value>oam_policy_mgr1</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Listen Address</name>
+                        <value>All Local Addresses</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Listen Port</name>
+                        <value>14150</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+            </configGroup>
+            <configGroup>
+                <type>MACHINE_CONFIG</type>
+                <configProperty id="Machine1">
+                    <configProperty>
+                        <name>Machine Name</name>
+                        <value>OAM_Machine</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Node Manager Listen Address</name>
+                        <value>localhost</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Node Manager Listen Port</name>
+                        <value>5556</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+            </configGroup>
+            <configGroup>
+                <type>CLUSTER_CONFIG</type>
+                <configProperty id="Cluster1">
+                    <configProperty>
+                        <name>Cluster Name</name>
+                        <value>oam_cluster</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Messaging Mode</name>
+                        <value>unicast</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Cluster Address</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Unicast Channel</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Multicast Address</name>
+                        <value>239.192.0.0</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Multicast Port</name>
+                        <value>7001</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+                <configProperty id="Cluster2">
+                    <configProperty>
+                        <name>Cluster Name</name>
+                        <value>msm_cluster</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Messaging Mode</name>
+                        <value>unicast</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Cluster Address</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Unicast Channel</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Multicast Address</name>
+                        <value>239.192.0.0</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Multicast Port</name>
+                        <value>7001</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+                <configProperty id="Cluster3">
+                    <configProperty>
+                        <name>Cluster Name</name>
+                        <value>ama_cluster</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Messaging Mode</name>
+                        <value>unicast</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Cluster Address</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Unicast Channel</name>
+                        <value/>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Multicast Address</name>
+                        <value>239.192.0.0</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Multicast Port</name>
+                        <value>7001</value>
+                        <itemMetadata>
+                            <dataType>INTEGER</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+            </configGroup>
+            <configGroup>
+                <type>DATASOURCE</type>
+                <configProperty id="DataSource1">
+                    <configProperty>
+                        <name>DataSource Name</name>
+                        <value>mds-owsm</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Driver Class</name>
+                        <value>oracle.jdbc.OracleDriver</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Url</name>
+                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>User</name>
+                        <value>az1pp1_MDS</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Password File</name>
+                        <value>/apps/oracle/MDC/t2p_db_pass.txt</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+                <configProperty id="DataSource2">
+                    <configProperty>
+                        <name>DataSource Name</name>
+                        <value>opss-DBDS</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Driver Class</name>
+                        <value>oracle.jdbc.OracleDriver</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Url</name>
+                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>User</name>
+                        <value>az1pp1_OPSS</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Password File</name>
+                        <value>/apps/oracle/MDC/t2p_db_pass.txt</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+                <configProperty id="DataSource3">
+                    <configProperty>
+                        <name>DataSource Name</name>
+                        <value>oamDS</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Driver Class</name>
+                        <value>oracle.jdbc.OracleDriver</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Url</name>
+                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>User</name>
+                        <value>az1pp1_OAM</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Password File</name>
+                        <value>/apps/oracle/MDC/t2p_db_pass.txt</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+                <configProperty id="DataSource4">
+                    <configProperty>
+                        <name>DataSource Name</name>
+                        <value>omsm-ds</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Driver Class</name>
+                        <value>oracle.jdbc.OracleDriver</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Url</name>
+                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>User</name>
+                        <value>az1pp1_OMSM</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Password File</name>
+                        <value>/apps/oracle/MDC/t2p_db_pass.txt</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+                <configProperty id="DataSource5">
+                    <configProperty>
+                        <name>DataSource Name</name>
+                        <value>mds-oam</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_ONLY</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Driver Class</name>
+                        <value>oracle.jdbc.OracleDriver</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Url</name>
+                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>User</name>
+                        <value>az1pp1_MDS</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                    <configProperty>
+                        <name>Password File</name>
+                        <value>/apps/oracle/MDC/t2p_db_pass.txt</value>
+                        <itemMetadata>
+                            <dataType>STRING</dataType>
+                            <password>true</password>
+                            <scope>READ_WRITE</scope>
+                        </itemMetadata>
+                    </configProperty>
+                </configProperty>
+            </configGroup>
+            <configGroup>
+                <type>OPSS_SECURITY</type>
+                <configProperty id="DB">
+                    <Description>OPSS Store will be targeted to the data source, opss-DBDS</Description>
+                </configProperty>
+            </configGroup>
+        </moveDescriptor>
+        <movableComponent>
+            <componentType>OAM</componentType>
+            <Description>AM Configuration Components</Description>
+            <movableComponent>
+                <componentType>AM_Configuration</componentType>
+                <moveDescriptor>
+                    <configProperty id="Load Balancer Details">
+                        <configProperty>
+                            <name>serverhost</name>
+                            <value>azxid2004.dta.azure.kp.org</value>
+                            <itemMetadata>
+                                <dataType>STRING</dataType>
+                                <scope>READ_WRITE</scope>
+                            </itemMetadata>
+                        </configProperty>
+                        <configProperty>
+                            <name>serverport</name>
+                            <value>14101</value>
+                            <itemMetadata>
+                                <dataType>STRING</dataType>
+                                <scope>READ_WRITE</scope>
+                            </itemMetadata>
+                        </configProperty>
+                    </configProperty>
+                    <configProperty id="MultiDataCenter Configuration">
+                        <configProperty>
+                            <name>Cluster ID</name>
+                            <value>PREPRODIDC</value>
+                            <itemMetadata>
+                                <dataType>STRING</dataType>
+                                <scope>READ_WRITE</scope>
+                            </itemMetadata>
+                        </configProperty>
+                    </configProperty>
+                    <configGroup>
+                        <type>ManagedServer</type>
+                        <configProperty id="oam_cluster">
+                            <configProperty>
+                                <name>Server Proxy</name>
+                                <value>5575</value>
+                                <itemMetadata>
+                                    <dataType>STRING</dataType>
+                                    <scope>READ_WRITE</scope>
+                                </itemMetadata>
+                            </configProperty>
+                        </configProperty>
+                        <configProperty id="oam_server1">
+                            <configProperty>
+                                <name>Server Proxy</name>
+                                <value>5575</value>
+                                <itemMetadata>
+                                    <dataType>STRING</dataType>
+                                    <scope>READ_WRITE</scope>
+                                </itemMetadata>
+                            </configProperty>
+                        </configProperty>
+                    </configGroup>
+                </moveDescriptor>
+            </movableComponent>
+        </movableComponent>
+    </movableComponent>
+</movePlan>
