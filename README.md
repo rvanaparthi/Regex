@@ -10,7 +10,26 @@ Ldap Modify Commands :
 ./ldapmodify -h hostname -p 10389 -D "cn=User"  -w "Password" -f file.ldif
 
 Patter in file.ldif
-dn: entryUUID=getfromdirectorystudio,ou=Consumers,o=aiser ermanente,c=us
+dn: entryUUID=getfromdirectorystudio
 changetype: modify
 add: LastLoggedInTimes
 LastLoggedInTimes:
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+<button class="b1"
+    (click)="b1()">
+    <mat-icon>icon</mat-icon>
+</button>
+
+<button class="b1"
+    (click)="b1()">
+    <mat-icon>othericon</mat-icon>
+    <span>Some Text</span>
+</button>
+
+
