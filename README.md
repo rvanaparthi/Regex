@@ -19,7 +19,11 @@ LastLoggedInTimes:
 
 
 --------------------------------------------------------------------------------
+Regex - <button[^>]*>((?!<\/button>)[\s\S])*?<span>[\s\S]*?<\/button>
 
+
+Content -
+-------------
 
 <button class="b1"
     (click)="b1()">
