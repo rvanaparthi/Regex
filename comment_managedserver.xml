@@ -592,7 +592,7 @@
                     </configProperty>
                     <configProperty>
                         <name>Url</name>
-                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <value>jdbc:oracle:thin:@hostname:1521:OAMDB</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -678,7 +678,7 @@
                     </configProperty>
                     <configProperty>
                         <name>Url</name>
-                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <value>jdbc:oracle:thin:@hostname:1521:OAMDB</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
