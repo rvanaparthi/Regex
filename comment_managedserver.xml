@@ -506,7 +506,7 @@
                     </configProperty>
                     <configProperty>
                         <name>Url</name>
-                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <value>jdbc:oracle:thin:@dbhostname:1521:OAMDB</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -514,7 +514,7 @@
                     </configProperty>
                     <configProperty>
                         <name>User</name>
-                        <value>az1pp1_MDS</value>
+                        <value>pp1_MDS</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -549,7 +549,7 @@
                     </configProperty>
                     <configProperty>
                         <name>Url</name>
-                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <value>jdbc:oracle:thin:@dbhostname:1521:OAMDB</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -557,7 +557,7 @@
                     </configProperty>
                     <configProperty>
                         <name>User</name>
-                        <value>az1pp1_OPSS</value>
+                        <value>pp1_OPSS</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -600,7 +600,7 @@
                     </configProperty>
                     <configProperty>
                         <name>User</name>
-                        <value>az1pp1_OAM</value>
+                        <value>pp1_OAM</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -635,7 +635,7 @@
                     </configProperty>
                     <configProperty>
                         <name>Url</name>
-                        <value>jdbc:oracle:thin:@azxid2004.dta.azure.kp.org:1521:OAMDB</value>
+                        <value>jdbc:oracle:thin:@hostname:1521:OAMDB</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -643,7 +643,7 @@
                     </configProperty>
                     <configProperty>
                         <name>User</name>
-                        <value>az1pp1_OMSM</value>
+                        <value>pp1_OMSM</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -686,7 +686,7 @@
                     </configProperty>
                     <configProperty>
                         <name>User</name>
-                        <value>az1pp1_MDS</value>
+                        <value>pp1_MDS</value>
                         <itemMetadata>
                             <dataType>STRING</dataType>
                             <scope>READ_WRITE</scope>
@@ -719,7 +719,7 @@
                     <configProperty id="Load Balancer Details">
                         <configProperty>
                             <name>serverhost</name>
-                            <value>azxid2004.dta.azure.kp.org</value>
+                            <value>hostname</value>
                             <itemMetadata>
                                 <dataType>STRING</dataType>
                                 <scope>READ_WRITE</scope>
