@@ -12,5 +12,5 @@ Ldap Modify Commands :
 Patter in file.ldif
 dn: entryUUID=getfromdirectorystudio,ou=Consumers,o=aiser ermanente,c=us
 changetype: modify
-add: kpLastLoggedInTimes
-kpLastLoggedInTimes:
+add: LastLoggedInTimes
+LastLoggedInTimes:
